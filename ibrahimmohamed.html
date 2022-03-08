@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="w-75 py-4 mx-auto ">
+    <label for="productName">product name : </label>
+    <input type="text" class="form-control my-2" id="productName">
+    <label for="productPrice">product price : </label>
+    <input type="number" class="form-control my-2" id="productPrice">
+    <label for="productCategory">product Category : </label>
+    <input type="text" class="form-control my-2" id="productCategory">
+    <label for="productDesc"> product Desc : </label>
+    <textarea type="text" class="form-control my-2" id="productDesc"></textarea>
+
+    <button onclick="addProduct()" class="btn btn-info"> Add product </button>
+  </div>
+
+  <div class="w-50 py-4 mx-auto">
+    <label for="searchProduct" >search . ..</label>
+    <input onkeyup="searchProduct(this.value)" type="text" class="form-control" id="searchProduct">
+  </div>
+
+
+  <div class="w-75 py-4 mx-auto ">
+    <table class="table text-center">
+      <thead>
+        <th> Index </th>
+        <th> Product Name </th>
+        <th> Product Price  </th>
+        <th> product category </th>
+        <th> Product Desc </th>
+        <th> up Date  </th>
+        <th> Delete </th>
+      </thead>
+      <tbody id="tableRaw">
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="JS/javascript.js"></script>
+</body>
+
+</html>
